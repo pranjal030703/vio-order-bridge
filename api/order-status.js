@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     .replace(/^(order|id|#|\s)+/gi, '')
     .trim();
 
-  const apiKey = 'rr_live_sBqHDkWRdmgpbBq-9pKk2w_Qc5jcXQAWTjgoN-tbZn4';
+  const apiKey = 'rr_live_aDPWX76QwG48ax0bQjSKzJYImBYvu5G-SI1xZP3N3sI';
   const targetUrl = `https://track-my-love-order-racketrush.lovable.app/api/public/orders?order_number=${encodeURIComponent(cleanOrderNumber)}`;
 
   try {
