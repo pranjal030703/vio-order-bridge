@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Please use POST method' });
   }
 
-  const { order_number } = req.body || {};
+  const { order_number } = req.body?.arguments || {};
 
   if (!order_number) {
     return res.status(400).json({ error: 'order_number is required' });
